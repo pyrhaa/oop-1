@@ -22,12 +22,12 @@ class Human {
   }
 
   mostSkilledDev(person) {
-    const array1 = this.language.length;
-    const array2 = person.language.length;
+    const length1 = this.language.length;
+    const length2 = person.language.length;
 
-    if (array1 > array2) {
+    if (length1 > length2) {
       return this.firstName;
-    } else if (array1 < array2) {
+    } else if (length1 < length2) {
       return person.firstName;
     } else {
       return 'draw';
@@ -35,25 +35,4 @@ class Human {
   }
 }
 
-// const alice = new Human('Alice', 'Liddell', 28, [
-//   'Javascript',
-//   'Python',
-//   'PHP'
-// ]);
-// const bob = new Human('Bob', 'Lemon', 30, ['Java', 'C++']);
-// const charlie = new Human('Charlie', 'Charlot', 8, [
-//   'Go',
-//   'Cobol',
-//   'Kotlin',
-//   'Java',
-//   'Angular'
-// ]);
-
-// console.log(alice.firstName);
-// console.log(bob.firstName);
-// alice.printInfo();
-// charlie.printInfo();
-// console.log(charlie.canVote());
-// console.log(alice.canVote());
-// console.log(charlie.mostSkilledDev(charlie));
 exports.Human = Human;
